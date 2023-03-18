@@ -6,7 +6,11 @@
  */
 int main(void)
 {
-	for (letter = a; a++)
-		putchar("the caracter enter should be written in lowercase");
+	char ch,
+	for (ch = 'a' <= 'z'; ch++)
+	{
+		putchar(ch);
+	}
+	putchar('\n');
 }
 return (0);
