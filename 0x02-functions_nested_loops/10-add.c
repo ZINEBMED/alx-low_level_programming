@@ -1,17 +1,14 @@
 #include "main.h"
+
 /**
- * main - check the code
+ * add - adds two integers and returns the result
+ * @x: the first number to be computed
+ * @y: the second number to be computed
  *
- * Return: Always 0
+ * Return: x + y
  */
-int main(void)
+
+int add(int x, int y)
 {
-	print_times_table(3);
-	_putchar('\n');
-	print_times_table(5);
-	_putchar('\n');
-	print_times_table(98);
-	_putchar('\n');
-	print_times_table(12);
-	return (0);
+	return (x + y);
 }
