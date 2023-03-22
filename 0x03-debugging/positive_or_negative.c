@@ -4,7 +4,7 @@
  *
  * @i: the number to be checked
  *
- * Return: Always 0 (Success)
+ * Return: Always 0
  */
 void positive_or_negative(int i)
 {
