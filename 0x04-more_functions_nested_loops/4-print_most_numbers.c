@@ -1,18 +1,21 @@
 #include <stdio.h>
 #include "main.h"
 /**
-* print_numbers - Entry point
-* the function will print numbers
-* Return: Always 0
-*/
-void print_numbers(void)
+ * print_most_numbers - Entry point
+ * print all numbers from 0 to 9 and escape 2 and 4
+ * Return: Always 0 (Success)
+ */
+void print_most_numbers(void)
 {
-	int i = 0;
+	char alpha = '0';
 
-	while (i < 10)
+	while (alpha <= '9')
 	{
-		_putchar(i + '0');
-		i++;
+		if (alpha != '2' && alpha != '4')
+		{
+			putchar(alpha);
+		}
+		alpha++;
 	}
-	_putchar('\n');
-	}
+		putchar('\n');
+}
