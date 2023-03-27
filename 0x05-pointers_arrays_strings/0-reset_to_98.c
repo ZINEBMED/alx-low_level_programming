@@ -5,11 +5,8 @@
  *
  * Return: Always 0.
  */
-void reset_to_98(int *n);
-int n;
+void reset_to_98(int *n)
+
 {
-	n = 98;
-	int *ptr;
-	ptr = n;
-	return (0);
+	*n = 98;
 }
