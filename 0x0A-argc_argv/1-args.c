@@ -7,14 +7,9 @@
  * Return: Always 0 (Success)
  */
 
-int main(int argc, char *argv[])
+int main(int argc, char *argv[] __attribute__((unused)))
 {
-	int i;
 
 	printf("%d\n", argc - 1);
-	for (i = 1; i < argc; i++)
-	{
-		printf("%s\n", argv[i]);
-	}
 	return (0);
 }
