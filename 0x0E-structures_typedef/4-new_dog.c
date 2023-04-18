@@ -4,7 +4,7 @@
  * print_dog - prints a new dog
  * @d: pointer *
  * Return: nothing
- * */
+ */
 void print_dog(struct dog *d)
 {
 	if (d)
