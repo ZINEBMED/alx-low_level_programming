@@ -5,19 +5,19 @@
  * int_index - indexes array
  * @array: array to go through
  * @size: size of array
- * @cmp: function to do something with size 
+ * @cmp: function to do something with size
  * Return: int value
  */
 int int_index(int *array, int size, int (*cmp)(int))
 {
-	int i;
+	int index;
 
 	if (size <= 0 || array == NULL || cmp == NULL)
 		return (-1);
-	for (i = 0; i < size; i++)
+	for (index = 0; index < size; index++)
 	{
-if (cmp(array[i]))
-	return (i);
+if (cmp(array[index]))
+	return (index);
 	}
-	return(-1);
+	return (-1);
 }
