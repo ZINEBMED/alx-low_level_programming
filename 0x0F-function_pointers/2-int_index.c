@@ -1,8 +1,8 @@
-#include <stdio>
-#include <stdlib>
+#include <stdio.h>
+#include <stdlib.h>
 #include "function_pointers.h"
 /**
- * int_index - indexes array
+ * int_index - a function that indexes array
  * @array: array to go through
  * @size: size of array
  * @cmp: function to do something with size
@@ -12,13 +12,12 @@ int int_index(int *array, int size, int (*cmp)(int))
 {
 	int index;
 
-	if (array && cmp)
-	{
+	if (size <= 0 || array == NULL || cmp == NULL)
+		return (-1);
 	for (index = 0; index < size; index++)
 	{
-	if (cmp(array[index]) != 0)
-	return (index);
-}
-}
+		if (cmp(array[index]))
+			return (index);
+	}
 	return (-1);
 }
